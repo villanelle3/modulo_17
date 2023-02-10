@@ -1,0 +1,23 @@
+{
+  "name": "modulo_17",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "less": "less-watch-compiler ./src/styles ./build/styles main.less"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/villanelle3/modulo_17.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/villanelle3/modulo_17/issues"
+  },
+  "homepage": "https://github.com/villanelle3/modulo_17#readme",
+  "devDependencies": {
+    "less": "^4.1.3"
+  }
+}
