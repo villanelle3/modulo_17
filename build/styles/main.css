@@ -1,5 +1,5 @@
-.marginbotton {
-  margin-bottom: 8px;
+.displaybloxk {
+  display: block;
 }
 * {
   font-family: 'Roboto', sans-serif;
@@ -8,90 +8,85 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #ffcbcb;
+  background-color: #f5f6fa;
 }
-header {
-  padding-bottom: 24px;
-}
-header img {
-  width: 96px;
-  display: block;
-  margin: 0 auto 24px;
-  border-radius: 50%;
-}
-header .bio {
-  text-align: center;
-}
-header .bio h1 {
-  font-weight: bold;
-  color: #132743;
-  font-size: 16px;
-  margin-bottom: 8px;
-}
-header .bio h2 {
-  font-size: 14px;
-  margin-bottom: 8px;
-}
-header .bio p {
-  font-size: 14px;
-  opacity: 70%;
-}
-ul {
+li {
   list-style: none;
 }
-a {
-  text-decoration: none;
-  color: black;
-}
-#sociallinks ul {
-  display: flex;
-  justify-content: space-between;
-  max-width: 240px;
-  width: 100%;
-  margin: 0 auto;
-}
-#sociallinks ul li {
-  padding-right: 8px;
-}
-#sociallinks ul li img:hover {
-  transform: scale(1.3);
-  transition: all ease 0.3s;
-}
 .container {
-  max-width: 962px;
+  max-width: 1024px;
   width: 100%;
   margin: 0 auto;
-  background-color: #ffb5b5;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .container {
     max-width: 80%;
   }
 }
-@media (max-width: 767px) {
-  .container {
-    max-width: 70%;
+header {
+  background-color: #182C61;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+.menu {
+  display: flex;
+}
+.menu li {
+  font-weight: bold;
+  margin-left: 24px;
+}
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+section {
+  padding: 56px 0;
+}
+.products {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 32.66%);
+  column-gap: 1%;
+  row-gap: 4%;
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .products {
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
   }
 }
-#projectslist {
-  margin-top: 32px;
+@media (max-width: 767px) {
+  .products {
+    display: block;
+  }
 }
-#projectslist li a {
-  background-color: #407088;
+.product-item img {
+  width: 100%;
+  border-radius: 16px;
+}
+@media (max-width: 767px) {
+  .product-item {
+    margin-bottom: 32px;
+  }
+}
+.product-button {
   display: block;
-  padding: 16px 20px;
-  margin-bottom: 16px;
-  font-weight: bold;
+  background-color: #44bd32;
+  color: #fff;
   text-align: center;
-  text-shadow: #ffb5b5 1px 0 10px;
-  color: white;
-  border-radius: 30px;
-  transition: all ease 0.5s;
+  padding: 8px 0;
+  border-radius: 8px;
+  margin-top: 8px;
+  text-decoration: none;
 }
-#projectslist li a:hover {
-  background-color: #132743;
+.product-button:hover {
+  background-color: #4cd137;
 }
